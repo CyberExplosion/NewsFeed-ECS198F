@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "462293184464",
-    "project_id": "newsfeed-ecs198f",
-    "storage_bucket": "newsfeed-ecs198f.appspot.com"
+    "project_number": "38955257060",
+    "project_id": "news-feed-5fd49",
+    "storage_bucket": "news-feed-5fd49.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:462293184464:android:e930e1c46df046003f13d5",
+        "mobilesdk_app_id": "1:38955257060:android:b89464d7596c39072b70f1",
         "android_client_info": {
           "package_name": "com.example.news_feed"
         }
       },
       "oauth_client": [
         {
-          "client_id": "462293184464-6gptt2m5f38m7i4o5dk47do28hitf2uo.apps.googleusercontent.com",
+          "client_id": "38955257060-ushkapt75a2lv08au2fg0gal1ceh4v7p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAj7a8xTSmvzQPDwZodkHhG2e40Vdqx3AE"
+          "current_key": "AIzaSyC5cgQj1AIZFnyNatmVgGv8GHk-1cVWXLA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "462293184464-6gptt2m5f38m7i4o5dk47do28hitf2uo.apps.googleusercontent.com",
+              "client_id": "38955257060-ushkapt75a2lv08au2fg0gal1ceh4v7p.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "462293184464-ammmp4uf3384t84mjt1v9ieamh3avffb.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.newsFeed"
-              }
             }
           ]
         }
