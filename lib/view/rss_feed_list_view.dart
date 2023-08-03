@@ -1,6 +1,4 @@
-import 'dart:developer';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:news_feed/testing/test_rss_feeds.dart';
 import 'package:news_feed/widget/fab.dart';

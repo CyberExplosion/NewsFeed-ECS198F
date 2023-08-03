@@ -17,10 +17,10 @@ class ArticleBookmarkButton extends StatefulWidget {
 class _ArticleBookmarkButtonState extends State<ArticleBookmarkButton> {
   // late bool isBookmarked;
   bool isBookmarked = false;
-  final booked = Icon(Icons.bookmark);
-  final unBooked = Icon(Icons.bookmark_border);
+  final booked = const Icon(Icons.bookmark);
+  final unBooked = const Icon(Icons.bookmark_border);
   // late Widget bookmarkIcon;
-  Widget bookmarkIcon = Icon(Icons.bookmark_border);
+  Widget bookmarkIcon = const Icon(Icons.bookmark_border);
   final DataBase service = DataBase();
 
   @override
@@ -64,10 +64,10 @@ class _ArticleBookmarkButtonState extends State<ArticleBookmarkButton> {
       User? currentUser = FirebaseAuth.instance.currentUser;
       if (currentUser == null) {
         ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: const Text("Please, sign in to use bookmarks!")));
+            const SnackBar(content: Text("Please, sign in to use bookmarks!")));
       } else if (kIsWeb) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: const Text(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+            content: Text(
                 "Bookmarks are not available on Web! Try again using your phone!")));
       } else {
         isBookmarked = !isBookmarked;

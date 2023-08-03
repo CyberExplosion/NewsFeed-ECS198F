@@ -4,7 +4,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:news_feed/data/article.dart';
 import 'package:news_feed/services/database.dart';
-import 'package:news_feed/testing/test_articles.dart';
 import 'package:news_feed/widget/article_card.dart';
 import 'package:news_feed/widget/fab.dart';
 import 'package:news_feed/widget/sign_in_status.dart';
@@ -83,7 +82,7 @@ class ArticleListViewState extends State<ArticleListView> {
     return Scaffold(
       appBar: AppBar(
         title: widget.rssFeed == null
-            ? Text("Favorites")
+            ? const Text("Favorites")
             : Text(widget.rssFeed!.title),
         actions: [
           widget.status,

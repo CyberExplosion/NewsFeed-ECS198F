@@ -25,8 +25,8 @@ class _BookmarkFABState extends State<BookmarkFAB> {
 
   void _goToBookmarks() {
     if (kIsWeb) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: const Text(
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text(
               "Bookmarks are not available on Web! Try again using your phone!")));
     } else {
       log("Go to bookmarks");

@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:news_feed/view/article_list_view.dart';
 import 'package:news_feed/view/rss_feed_list_view.dart';
-import 'package:news_feed/data/rss.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:news_feed/testing/test_rss_feeds.dart';
 import 'package:news_feed/widget/fab.dart';
 import 'package:news_feed/widget/sign_in_status.dart';
 import 'firebase_options.dart';
@@ -15,17 +13,18 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(
+    name: 'news_feed',
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   final SignInStatus _signInStatus = const SignInStatus();
   final BookmarkFAB _bookmarkFab = const BookmarkFAB();
 
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -62,7 +61,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   User? _user;
-  final loginSnackBar = SnackBar(content: const Text("Logged in!"));
+  final loginSnackBar = const SnackBar(content: Text("Logged in!"));
 
   @override
   void initState() {
