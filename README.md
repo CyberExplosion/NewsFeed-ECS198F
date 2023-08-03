@@ -3,12 +3,12 @@
 A news feed Flutter project.
 
 ## Group Members
-koinguyen@ucdavis.edu, Khoi Nguyen, 919833517
+koinguyen@ucdavis.edu, Khoi Nguyen
 
 ocostilla@ucdavis.edu, Omar Costilla
 
-rsax@ucdavis.edu, Rijul Saxena, 916034940
+rsax@ucdavis.edu, Rijul Saxena
 
-vplagov@ucdavis.edu, Vladimir Plagov, 918337881
+vplagov@ucdavis.edu, Vladimir Plagov
 
-hhtlin@ucdavis.edu, Teresa Lin, 919538689
+hhtlin@ucdavis.edu, Teresa Lin
